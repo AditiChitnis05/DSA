@@ -1,0 +1,16 @@
+//Take name as input and print a greeting message for that particular name.
+package com.aditi;
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args) {
+
+        Scanner input=new Scanner(System.in);
+        System.out.print("enter your name: ");
+        String word=input.nextLine();
+
+        System.out.println("hii "+word+"!" );
+        input.close();
+    }
+
+
+}
