@@ -1,0 +1,28 @@
+//Take in two numbers and an operator (+, -, *, /) and calculate the value. (Use if conditions)
+package com.aditi;
+        import java.util.Scanner;
+public class Main{
+    public static void main(String[] args) {
+
+        Scanner input=new Scanner(System.in);
+
+        System.out.print("enter number1: ");
+        int number1=input.nextInt();
+
+        System.out.print("enter number2: ");
+        int number2=input.nextInt();
+
+        System.out.print("enter symbol to be used:");
+        double result =0;
+        char operator = input.next().charAt(0);
+        if(operator=='+'){
+            result=number1+number2;}
+            else if(operator=='-'){
+                result=number1-number2;}
+            else if(operator=='*'){
+                result=number1*number2;}
+            else if(operator=='/'){
+                result=number1/number2;}
+            System.out.println(result);
+    }
+}
