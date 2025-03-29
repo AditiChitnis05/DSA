@@ -22,7 +22,7 @@ public class Main{
             else if(operator=='*'){
                 result=number1*number2;}
             else if(operator=='/'){
-                result=number1/number2;}
+                result=(double)number1/number2;}
             System.out.println(result);
     }
 }
