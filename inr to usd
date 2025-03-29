@@ -1,0 +1,13 @@
+//Input currency in rupees and output in USD.
+package com.aditi;
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner input=new Scanner(System.in);
+        System.out.print("Enter your money in INR: ");
+        float INR=input.nextFloat();
+        float USD=INR/82;
+        System.out.println("your total money in usd is :"+USD+"$");
+
+    }
+}
