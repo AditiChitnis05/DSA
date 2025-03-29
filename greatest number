@@ -1,0 +1,27 @@
+//Take in three numbers greatest of all
+package com.aditi;
+        import java.util.Scanner;
+public class Main{
+    public static void main(String[] args) {
+
+        Scanner input=new Scanner(System.in);
+
+        System.out.print("enter number1: ");
+        int number1=input.nextInt();
+
+        System.out.print("enter number2: ");
+        int number2=input.nextInt();
+        System.out.print("enter number3: ");
+        int number3=input.nextInt();
+
+        
+        if(number1>number2 && number1>number3){
+            System.out.println("number 1 is greatest");}
+        if(number2>number1 && number2>number3){
+            System.out.println("number 2 is greatest");}
+        if(number3>number2 && number3>number1){
+            System.out.println("number 3 is greatest");}
+    }
+
+
+}
