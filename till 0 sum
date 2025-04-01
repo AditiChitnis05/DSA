@@ -1,0 +1,28 @@
+//Take integer inputs till the user enters 0 and print the sum of all numbers (HINT: while loop)
+package com.aditi;
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int sum=0;
+        while(true){
+
+            System.out.print("Enter the integer: ");
+            int x = input.nextInt();
+
+            if(x!=0){
+
+                sum=sum+x;
+
+            }
+            else{
+                if(x==0){
+                    break;
+            }
+
+            }
+
+        }
+        System.out.print(sum);
+    }
+}
