@@ -1,0 +1,22 @@
+package com.aditi;
+import java.util.Scanner;
+public class recurrence {
+    public static void main(String[] args) {
+        Scanner in=new Scanner(System.in);
+        System.out.println("ENTER THE NUMBER TO BE CHECKED 3'S FOR: ");
+        Integer a=in.nextInt();
+        int count=0;
+
+
+        while(a>0){
+            if(a%10==3) {
+                count++;
+
+            }
+            a = a / 10;
+        }
+
+        System.out.println("there are "+count+"three's");
+
+    }
+}
