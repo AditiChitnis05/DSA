@@ -1,0 +1,21 @@
+//substract the product and sum of an integer.
+package com.aditi;
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args) {
+        Scanner input=new Scanner(System.in);
+        int sum=0;
+        int product=1;
+        System.out.println("Enter the number: ");//11
+        int num=input.nextInt();//num=54
+        int i=0;
+        while(num>0){//true
+            i=num%10;//54%10=4,5%10=5
+            sum=sum+i;//0+4=4,4+5=9
+            product=i*product;//4*1=4,5*4=20
+            num=num/10;//54/10=5,0
+        }
+        int sub=product-sum;
+        System.out.println(sub);
+    }
+}
