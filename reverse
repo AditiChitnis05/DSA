@@ -1,0 +1,23 @@
+/To find out reverse
+package com.aditi;
+import java.util.Scanner;
+public class recurrence {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the string to do palindrome:  ");
+
+        String str = sc.nextLine();
+
+        String reverse = "";  // Variable to store characters
+
+                for (int i = 0; i < str.length(); i++) {
+                    reverse = str.charAt(i) + reverse;  // Store characters in reverse order
+                }
+
+                System.out.println(reverse.equals(str));  // true if palindrome, false otherwise
+            }
+        }
+
+
+
