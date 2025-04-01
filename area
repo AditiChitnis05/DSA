@@ -1,0 +1,66 @@
+package com.aditi;
+import java.util.Scanner;
+
+public class recurrence {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("SELECT THE OBJECT:");
+        System.out.print("1)CIRCLE\n2)TRIANGLE\n3)RECTANGLE\n4)ISOSCELES TRIANGLE\n5)PARALLELOGRAM\n6)RHOMBUS\n7)EQUILATERAL TRIANGLE\n");
+
+        System.out.println("Enter the number of object to find area of: ");
+        char choice = sc.next().trim().charAt(0);
+
+        if(choice == '1'){
+            System.out.println("Enter the radius of the circle: ");
+            int radius = sc.nextInt();
+            float area = (float)(Math.PI * radius * radius); // Use Math.PI for accurate value of pi
+            System.out.println("The area of the circle is: " + area);
+        }
+        else if(choice == '2'){
+            System.out.println("Enter the base and height of the triangle: ");
+            int base = sc.nextInt();
+            int height = sc.nextInt();
+            float area = (float)(0.5 * base * height); // Correct the calculation to 0.5 instead of 1/2
+            System.out.println("The area of the triangle is: " + area);
+        }
+        else if(choice == '3') {
+            System.out.println("Enter the length and width of the rectangle: ");
+            int length = sc.nextInt();
+            int width = sc.nextInt();
+            float area = (float) (length * width);
+            System.out.println("The area of the rectangle is: " + area);
+        }
+        else if(choice == '4') {
+            System.out.println("Enter the base and height of the isosceles triangle: ");
+            int base = sc.nextInt();
+            int height = sc.nextInt();
+            float area = (float)(0.5 * base * height); // Correct the calculation to 0.5
+            System.out.println("The area of the isosceles triangle is: " + area);
+        }
+        else if(choice == '5') {
+            System.out.println("Enter the base and height of the parallelogram: ");
+            int base = sc.nextInt();
+            int height = sc.nextInt();
+            float area = (float) (base * height);
+            System.out.println("The area of the parallelogram is: " + area);
+        }
+        else if(choice == '6') {
+            System.out.println("Enter the diagonals of the rhombus: ");
+            int diagonal1 = sc.nextInt();
+            int diagonal2 = sc.nextInt();
+            float area = (float)(0.5 * diagonal1 * diagonal2); // Correct the calculation to 0.5
+            System.out.println("The area of the rhombus is: " + area);
+        }
+        else if(choice == '7') {
+            System.out.println("Enter the side of the equilateral triangle: ");
+            int side = sc.nextInt();
+            float area = (float)(Math.sqrt(3) / 4 * side * side); // Use Math.sqrt(3) for more accurate result
+            System.out.println("The area of the equilateral triangle is: " + area);
+        }
+        else {
+            System.out.println("Invalid choice! Please select a valid option.");
+        }
+    }
+}
