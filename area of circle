@@ -1,0 +1,13 @@
+//Area Of Circle Java Program
+package com.aditi;
+import java.util.Scanner;
+public class recurrence {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the radius of circle: ");
+        float r=sc.nextFloat();
+        float area_of_circle=(float)(2*3.47)*r*r;
+        System.out.println("The area of a circle is "+area_of_circle);
+    }
+}
+
